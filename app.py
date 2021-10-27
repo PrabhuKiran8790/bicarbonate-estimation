@@ -16,7 +16,7 @@ def main():
 
 	html_templ = """
 	<div style="background-color:blue;padding:10px;">
-	<h3 style="color:cyan">Very Simple Linear Regression Web App for Bicarbonate Estimation</h3>
+	<h3 style="color:cyan">Simple Linear Regression Web App for Bicarbonate Estimation</h3>
 	</div>
 	"""
 
