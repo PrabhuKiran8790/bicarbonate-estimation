@@ -37,14 +37,14 @@ def main():
 		if st.button("Estimate:"):
 
 			regressor = load_prediction_model("SimpleLinearRegression-20K45A0215(ph_vs_bicar).pkl")
-			experience_reshaped = np.array(waterph).reshape(-1,1)
+			waterph_reshaped = np.array(waterph).reshape(-1,1)
 
 			#st.write(type(experience_reshaped))
 			#st.write(experience_reshaped.shape)
 
-			predicted_salary = regressor.predict(experience_reshaped)
+			predicted_bicar = regressor.predict(waterph_reshaped)
 
-			st.info("Bicarbonate with {} pH of the Water: {}".format(waterph,(predicted_salary[0][0].round(2))))
+			st.info("Bicarbonate with {} pH of the Water: {}".format(waterph,(predicted_bicar[0][0].round(2))))
 
 # About CHOICE
 	if choice == 'About':
